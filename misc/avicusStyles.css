@@ -4,12 +4,12 @@
 
 /* HTML5 Legacy support and main settings*/
 header, section, footer, aside, nav, main, article, figure {display: block;}
-@font-face {font-family: avicusFont;src: url(misc/avicusFont.ttf);}
-@font-face {font-family: Aniron;src: url(misc/Aniron.ttf);}
+@font-face {font-family: avicusFont;src: url(avicusFont.ttf);}
+@font-face {font-family: Aniron;src: url(Aniron.ttf);}
 * {box-sizing: border-box;}
 body {
     margin: 0;
-    background-image: url("misc/background.png");
+    background-image: url("background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
