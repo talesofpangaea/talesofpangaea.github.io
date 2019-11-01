@@ -9,7 +9,7 @@ header, section, footer, aside, nav, main, article, figure {display: block;}
 * {box-sizing: border-box;}
 body {
     margin: 0;
-    background-image: url("background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -31,13 +31,13 @@ ul.aviNavi {
 ul.aviNavi li {float: left;}
 ul.aviNavi li a {
     display: block;
-    /* color: rgb(223, 223, 223); [3] AviNavi bar and Footer text color */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 ul.aviNavi li a:hover:not(a.active) {
     border-radius: 7px;
+    padding: 14px 16px;
     background-color: rgba(0, 134, 196, 0.2); /* [5] AviNavi hover color */
 }
 ul.aviNavi li a.active {
