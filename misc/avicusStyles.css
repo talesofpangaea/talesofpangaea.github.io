@@ -9,7 +9,7 @@ header, section, footer, aside, nav, main, article, figure {display: block;}
 * {box-sizing: border-box;}
 body {
     margin: 0;
-    background-image: url("background.png");
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
