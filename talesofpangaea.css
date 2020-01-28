@@ -1,20 +1,20 @@
-/*  This is a template CSS stylesheet v3.2
+/*  This is a template CSS stylesheet v3.3
  *  by Avicus Delacroix (Discord: Avicus#1172)
  */
 
 /* HTML5 Legacy support and main settings*/
 header, section, footer, aside, nav, main, article, figure {display: block;}
-@font-face {font-family: avicusFont;src: url(avicusFont.ttf);}
-@font-face {font-family: Aniron;src: url(Aniron.ttf);}
+
+@font-face {font-family: avicusFont;src: url(talesofpangaea.ttf);}
 * {box-sizing: border-box;}
 body {
     margin: 0;
-    background-image: url("../img/background.jpg");
+    background-image: url("background.jpg"); /* [1] Site background*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     font-family: avicusFont;
-    color: rgb(147, 221, 255);
+    color: rgb(248, 242, 236);
 }
 /* Avicus Navigation, Footer and Links Style */
 ul.aviNavi {
@@ -22,44 +22,47 @@ ul.aviNavi {
     margin: 0.5%;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6); /* [2] AviNavi bar and Footer */
+    background-color: rgba(25, 51, 77, 0.9); /* [2] AviNavi bar and Footer */
     position: -webkit-sticky;
     position: sticky;
     top: 0.5%;
     border-radius: 7px;
+    font-size: 1.2em;
 }
 ul.aviNavi li {float: left;}
 ul.aviNavi li a {
     display: block;
+    color: rgb(248, 242, 236); /* [3] AviNavi bar and Footer text color */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-ul.aviNavi li a:hover:not(a.active) {
+ul.aviNavi li a:hover:not(.active) {
     border-radius: 7px;
-    padding: 14px 16px;
-    background-color: rgba(0, 134, 196, 0.2); /* [5] AviNavi hover color */
+    background-color: rgb(148, 110, 56); /* [5] AviNavi hover color */
 }
 ul.aviNavi li a.active {
     border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.7);  /* [4] "Active" Header color */
+    background-color: rgb(115, 77, 38);  /* [4] "Active" Header color */
 }
 ul.aviNavi li.right {float: right;}
-a:link, a:visited {color: rgb(40, 187, 255);} /* [6] Text links colors */
-a:hover, a:active {color: rgb(199, 237, 255);} /* [7] Text active links colors */
+a:link, a:visited {color: rgb(166, 123, 63);} /* [6] Text links colors */
+a:hover, a:active {color: rgb(148, 110, 56);} /* [7] Text active links colors */
 footer {
-    background-color: rgba(0, 0, 0, 0.6); /* [2] AviNavi bar and Footer */
-    /* color: rgb(223, 223, 223); */
+    background-color: rgba(25, 51, 77, 0.9); /* [2] AviNavi bar and Footer */
+    color: rgb(248, 242, 236); /* [3] AviNavi bar and Footer text color */
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     border-radius: 7px;
     margin: 0.5%;
+    font-size: 1.2em;
 }
 /* Main Data Styles */
 .aviBody {
     overflow: auto;
     margin: 0.5%;
+    font-size: 1.4em;
 }
 .aviBody::after {
     content: "";
@@ -67,44 +70,45 @@ footer {
     display: table;
   }
 section {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(25, 51, 77, 0.7);
     border-radius: 7px;
     padding: 14px;
     float: left;
-    width: 74.3%;
+    width: 66.3%;
     margin-bottom: 0.5%;
 }
 article {
-    background-color:rgba(0, 134, 196, 0.2);
+    background-color: rgba(198, 236, 214, 0.7);
     border-radius: 7px;
     padding: 14px;
     margin-bottom: 0.5%;
     margin-top: 0.5%;
+    color: rgb(37, 27, 14);
 }
 aside {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(25, 51, 77, 0.7);
     border-radius: 7px;
     padding: 14px;
-    width:25.2%;
+    width:33.2%;
     float: right;
+    top: 0;
+    right: 0;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 h1 {
     text-indent: 7%;
-    font-family: Aniron;
-    font-size: 2em;
-    color: rgb(93, 204, 255);
+    font-size: 3em;
 }
 h2 {
     text-indent: 3%;
-    font-family: Aniron;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 h3 {
     text-indent: 0%;
 }
 p {
     text-align: justify;
-    font-size: 1.1em;
 }
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
